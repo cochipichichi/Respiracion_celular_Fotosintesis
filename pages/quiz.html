@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiz — BIO1M OA7</title><link rel="stylesheet" href="../styles.css"><meta name="theme-color" content="#0b1220"></head>
+<body>
+<header><div class="container navbar">
+  <div class="logo"><span style="font-size:22px">🧬</span><div>Quiz <span class="badge">BIO 1°M</span></div></div>
+  <nav class="controls" aria-label="🛠️ Controles">
+    <a class="btn" href="../index.html">🏠</a>
+    <button class="btn" id="btn-tts">🗣️</button>
+    <button class="btn" id="btn-theme">🌓</button>
+    <button class="btn" id="btn-plus">A+</button>
+    <button class="btn" id="btn-minus">A−</button>
+  </nav>
+</div></header>
+<main class="container">
+<section class="card">
+  <h2 class="section-title">Quiz Rápido</h2>
+  <form class="quiz">
+    <p><strong>1)</strong> ¿Dónde ocurre la fase luminosa? <br>
+      <label><input type="radio" name="q1" value="a" data-correct="a"> Tilacoides</label><br>
+      <label><input type="radio" name="q1" value="b"> Estroma</label>
+    </p>
+    <p><strong>2)</strong> Producto directo de respiración celular: <br>
+      <label><input type="radio" name="q2" value="a"> O₂</label><br>
+      <label><input type="radio" name="q2" value="b" data-correct="b"> CO₂</label>
+    </p>
+    <p><strong>3)</strong> ¿Qué molécula almacena energía inmediata? <br>
+      <label><input type="radio" name="q3" value="a" data-correct="a"> ATP</label><br>
+      <label><input type="radio" name="q3" value="b"> ADN</label>
+    </p>
+  </form>
+  <button class="btn solid" onclick="gradeQuiz()">✅ Corregir</button>
+  <p id="quizResult" class="pill" style="margin-top:10px">—</p>
+</section>
+
+<div class="footer-bar"><div>📚© Neotech EduLab — Educación Inmersiva</div><small>🛠️Prohibida su copia y/o reproducción</small></div>
+</main><script src="../script.js"></script></body></html>

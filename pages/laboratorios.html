@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prácticas de laboratorio — BIO1M OA7</title><link rel="stylesheet" href="../styles.css"><meta name="theme-color" content="#0b1220"></head>
+<body>
+<header><div class="container navbar">
+  <div class="logo"><span style="font-size:22px">🧬</span><div>Prácticas de laboratorio <span class="badge">BIO 1°M</span></div></div>
+  <nav class="controls" aria-label="🛠️ Controles">
+    <a class="btn" href="../index.html">🏠</a>
+    <button class="btn" id="btn-tts">🗣️</button>
+    <button class="btn" id="btn-theme">🌓</button>
+    <button class="btn" id="btn-plus">A+</button>
+    <button class="btn" id="btn-minus">A−</button>
+  </nav>
+</div></header>
+<main class="container">
+<section class="grid">
+  <article class="card">
+    <h3>🍃 Ensayo de discos de hoja</h3>
+    <p>Flotación como proxy de O₂: variar luz/CO₂/temperatura; construir curva luz–velocidad.</p>
+  </article>
+  <article class="card">
+    <h3>🧪 Indicador de CO₂</h3>
+    <p>Agua con indicador (pH) para observar respiración en semillas vs fotosíntesis en Elodea.</p>
+  </article>
+  <article class="card">
+    <h3>📦 Respirometría</h3>
+    <p>Semillas en germinación: consumo de O₂ (trampa CO₂ con KOH), efecto de T°.</p>
+  </article>
+</section>
+<section class="card">
+  <h3>📤 Plantilla de datos (CSV)</h3>
+  <button class="btn" onclick="downloadCSV('datos_lab.csv', [['Ensayo','Variable','Valor','Unidad'],['Discos','Intensidad','0','lux']])">Descargar</button>
+</section>
+
+<div class="footer-bar"><div>📚© Neotech EduLab — Educación Inmersiva</div><small>🛠️Prohibida su copia y/o reproducción</small></div>
+</main><script src="../script.js"></script></body></html>

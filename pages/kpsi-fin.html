@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KPSI Fin — BIO1M OA7</title><link rel="stylesheet" href="../styles.css"><meta name="theme-color" content="#0b1220"></head>
+<body>
+<header><div class="container navbar">
+  <div class="logo"><span style="font-size:22px">🧬</span><div>KPSI Fin <span class="badge">BIO 1°M</span></div></div>
+  <nav class="controls" aria-label="🛠️ Controles">
+    <a class="btn" href="../index.html">🏠</a>
+    <button class="btn" id="btn-tts">🗣️</button>
+    <button class="btn" id="btn-theme">🌓</button>
+    <button class="btn" id="btn-plus">A+</button>
+    <button class="btn" id="btn-minus">A−</button>
+  </nav>
+</div></header>
+<main class="container">
+<section class="card">
+  <h2 class="section-title">KPSI — Fin</h2>
+  <p>Marca tu nivel (1 Nada — 4 Mucho).</p>
+  <table>
+    <tr><th>Ítem</th><th>1</th><th>2</th><th>3</th><th>4</th></tr>
+    <tr><td>Fases de la respiración celular</td><td><input type="radio" name="k1"></td><td><input type="radio" name="k1"></td><td><input type="radio" name="k1"></td><td><input type="radio" name="k1"></td></tr>
+    <tr><td>Relación fotosíntesis-respiración</td><td><input type="radio" name="k2"></td><td><input type="radio" name="k2"></td><td><input type="radio" name="k2"></td><td><input type="radio" name="k2"></td></tr>
+  </table>
+  <button class="btn" onclick="downloadCSV('KPSI_fin.csv', [['Ítem','Nivel'],['Fases respiración','(selección)'],['Relación F/R','(selección)']])">📤 Exportar CSV</button>
+</section>
+
+<div class="footer-bar"><div>📚© Neotech EduLab — Educación Inmersiva</div><small>🛠️Prohibida su copia y/o reproducción</small></div>
+</main><script src="../script.js"></script></body></html>
