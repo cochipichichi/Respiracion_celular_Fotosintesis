@@ -3,164 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Biología 1°M — Respiración celular</title>
+  <title>Respiración celular — BIO 1°M</title>
   <link rel="stylesheet" href="../styles.css" />
   <script defer src="../script.js"></script>
 </head>
 <body>
-  <!-- Header con controles -->
-  <header class="site-header">
-    <div class="brand">
-      <span class="logo">🧪 BIO 1°M</span>
-      <span class="subtitle">Respiración celular</span>
-    </div>
-    <div class="controls">
-      <button id="btn-tts" aria-label="Leer contenido">🗣️</button>
-      <button id="btn-theme" aria-label="Cambiar tema">🌓</button>
-      <button id="btn-font-inc" aria-label="Aumentar letra">A+</button>
-      <button id="btn-font-dec" aria-label="Disminuir letra">A−</button>
-    </div>
-  </header>
+  <h1>Respiración celular — Biología 1° medio</h1>
+  <div class="top-controls">
+    <button id="btn-tts" aria-label="Leer contenido">🗣️</button>
+    <button id="btn-theme" aria-label="Cambiar tema">🌓</button>
+    <button id="btn-font-inc" aria-label="Aumentar letra">A+</button>
+    <button id="btn-font-dec" aria-label="Disminuir letra">A−</button>
+  </div>
 
-  <!-- Instrucciones PIE -->
-  <section class="pie-instrucciones">
-    <details open>
-      <summary>🧠 Instrucciones para estudiantes PIE</summary>
-      <p>1. Lee primero el resumen “¿Qué debes recordar?”.</p>
-      <p>2. Luego pasa a la comparación con la fotosíntesis.</p>
-      <p>3. Si te pierdes en las etapas, mira el recurso 3D o AR.</p>
-      <p>4. Usa 🗣️ para escuchar el contenido y A+ / A− para ajustarlo.</p>
-    </details>
-  </section>
+  <!-- PIE -->
+  <h2>🧠 Instrucciones PIE</h2>
+  <p>1. Lee el resumen para saber de qué se trata.</p>
+  <p>2. Revisa las 3 etapas por separado.</p>
+  <p>3. Usa el recurso 3D/AR para ver la mitocondria.</p>
+  <p>4. Vuelve al final para hacer la actividad.</p>
 
-  <main class="content">
-    <h1>🔥 Respiración celular</h1>
-    <p>
-      La respiración celular es el proceso mediante el cual las células obtienen <strong>energía útil (ATP)</strong>
-      a partir de la degradación de moléculas orgánicas, principalmente <strong>glucosa</strong>.
-      Es el “aprovechamiento” de la materia y energía que la fotosíntesis fabricó.
-    </p>
+  <!-- Intro -->
+  <h2>🔥 ¿Qué es la respiración celular?</h2>
+  <p>
+    Es el proceso mediante el cual la célula <strong>obtiene energía (ATP)</strong> degradando
+    moléculas orgánicas, principalmente <strong>glucosa</strong>. A diferencia de la fotosíntesis,
+    aquí no se fabrica alimento, sino que se <strong>usa</strong> el alimento para sacar energía.
+  </p>
+  <p>
+    La mayoría de las veces este proceso es <strong>aeróbico</strong>, es decir, usa oxígeno.
+  </p>
 
-    <!-- ¿Qué debes recordar? -->
-    <section class="card">
-      <h2>📝 ¿Qué debes recordar?</h2>
-      <ul>
-        <li>Ocurre en las <strong>células</strong> de casi todos los seres vivos, no solo en animales.</li>
-        <li>La mayor parte del proceso ocurre en las <strong>mitocondrias</strong>.</li>
-        <li>Su objetivo es producir <strong>ATP</strong>, la “moneda energética” de la célula.</li>
-        <li>Usa <strong>oxígeno</strong> (en la respiración celular aeróbica) y libera <strong>CO₂</strong> y <strong>H₂O</strong>.</li>
-      </ul>
-    </section>
+  <!-- Resumen clave -->
+  <h2>📝 ¿Qué debes recordar?</h2>
+  <ul>
+    <li>Ocurre en casi todos los seres vivos (plantas también).</li>
+    <li>La mayor parte ocurre en la <strong>mitocondria</strong>.</li>
+    <li>Usa oxígeno y libera CO₂ y agua.</li>
+    <li>La finalidad es producir <strong>ATP</strong>, que es la energía de la célula.</li>
+  </ul>
 
-    <!-- Conexión con el OA -->
-    <section class="card">
-      <h2>📚 Conexión con el OA del Mineduc</h2>
-      <p>
-        Este contenido se vincula con el OA que pide explicar la transformación de materia y energía en los seres vivos
-        (fotosíntesis y respiración). La idea es que el estudiante entienda que lo que se fabrica en la fotosíntesis
-        puede ser usado después para obtener ATP.
-      </p>
-      <p class="small">
-        Docente: puedes usar esta página como antesala a una guía de análisis de ecuaciones químicas o de comparación de
-        procesos metabólicos (material protegido).
-      </p>
-    </section>
+  <!-- OA -->
+  <h2>📚 Conexión con el OA del Mineduc</h2>
+  <p>
+    El OA de 1° medio pide explicar la transformación de materia y energía en los seres vivos.
+    La respiración celular es la “otra cara” de la fotosíntesis: lo que la planta fabrica, la
+    respiración lo usa. Esto te sirve para hacer cuadros comparativos y rúbricas simples.
+  </p>
 
-    <!-- Etapas de la respiración -->
-    <section>
-      <h2>⚙️ Etapas de la respiración celular aeróbica</h2>
-      <p>La respiración celular aeróbica se suele explicar en 3 grandes etapas:</p>
+  <!-- Etapas -->
+  <h2>⚙️ Etapas de la respiración celular aeróbica</h2>
+  <p>Se suele enseñar en 3 etapas para que sea más fácil:</p>
 
-      <h3>1. Glicólisis (en el citoplasma)</h3>
-      <p>
-        Se rompe la glucosa (6C) en 2 moléculas de ácido pirúvico (3C).
-        Aquí ya se gana un poco de energía: <strong>2 ATP</strong> netos.
-        Esta etapa <em>no</em> necesita oxígeno.
-      </p>
+  <h3>1. Glicólisis (en el citoplasma)</h3>
+  <p>
+    Se rompe la glucosa (6 carbonos) en 2 moléculas de piruvato (3 carbonos).
+    Se ganan <strong>2 ATP</strong> netos. Esta parte <em>no</em> necesita oxígeno.
+  </p>
 
-      <h3>2. Ciclo de Krebs (en la matriz mitocondrial)</h3>
-      <p>
-        El piruvato se procesa y se va liberando <strong>CO₂</strong>.
-        Aquí se cargan moléculas transportadoras de energía (NADH, FADH₂).
-      </p>
+  <h3>2. Ciclo de Krebs (en la matriz mitocondrial)</h3>
+  <p>
+    El piruvato se procesa y se va liberando <strong>CO₂</strong>.
+    Aquí se cargan moléculas como <strong>NADH</strong> y <strong>FADH₂</strong> que llevan energía.
+  </p>
 
-      <h3>3. Cadena transportadora de electrones (en las crestas mitocondriales)</h3>
-      <p>
-        Es donde se produce <strong>la mayor cantidad de ATP</strong>.
-        Aquí sí es fundamental el <strong>oxígeno</strong>, porque actúa como aceptor final de electrones.
-        Sin oxígeno, esta parte no ocurre bien.
-      </p>
+  <h3>3. Cadena transportadora de electrones (en las crestas mitocondriales)</h3>
+  <p>
+    Es la etapa que produce <strong>más ATP</strong>. Aquí sí es clave el oxígeno, porque recibe los
+    electrones al final. Si no hay oxígeno, esta parte se detiene.
+  </p>
 
-      <p>
-        Resultado global (simplificado):
-      </p>
-      <p><strong>C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + 36-38 ATP</strong></p>
-      <p class="small">
-        (La cifra de ATP puede variar según el texto, pero en 1° medio basta con que entiendan que la respiración
-        celular libera mucha más energía que la fermentación.)
-      </p>
-    </section>
+  <p><strong>Ecuación global:</strong> C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + 36-38 ATP</p>
+  <p class="small">La cantidad exacta de ATP puede variar según la fuente, pero lo importante es que es “mucho”.</p>
 
-    <!-- Comparación con fotosíntesis -->
-    <section class="card">
-      <h2>🔁 Comparación con la fotosíntesis</h2>
-      <p>Una forma fácil de aprenderlo es pensar que son “procesos complementarios”:</p>
-      <ul>
-        <li>La <strong>fotosíntesis</strong> usa CO₂ y H₂O y libera O₂.</li>
-        <li>La <strong>respiración</strong> usa O₂ y libera CO₂ y H₂O.</li>
-        <li>La fotosíntesis <em>fabrica</em> glucosa; la respiración <em>usa</em> glucosa.</li>
-        <li>La fotosíntesis ocurre en cloroplastos; la respiración en mitocondrias.</li>
-      </ul>
-      <p class="small">
-        Esta comparación es buena para ticket de salida o para una evaluación formativa rápida.
-      </p>
-    </section>
+  <!-- Comparación -->
+  <h2>🔁 Comparación con la fotosíntesis</h2>
+  <ul>
+    <li>La fotosíntesis <strong>usa CO₂</strong> y <strong>libera O₂</strong>.</li>
+    <li>La respiración <strong>usa O₂</strong> y <strong>libera CO₂</strong>.</li>
+    <li>La fotosíntesis <strong>fabrica</strong> glucosa; la respiración la <strong>usa</strong>.</li>
+    <li>Fotosíntesis → cloroplasto; respiración → mitocondria.</li>
+  </ul>
+  <p class="small">Este cuadro te sirve para ticket de salida o evaluación formativa.</p>
 
-    <!-- Errores frecuentes -->
-    <section class="card">
-      <h2>⚠️ Errores frecuentes del alumno</h2>
-      <ul>
-        <li>Creer que la respiración celular es lo mismo que “respirar por la nariz”.</li>
-        <li>Olvidar que las plantas también hacen respiración celular.</li>
-        <li>Confundir respiración <em>aeróbica</em> con <em>anaeróbica</em>.</li>
-        <li>Pensar que la respiración celular ocurre en el pulmón (eso es respiración externa).</li>
-        <li>No mencionar al ATP en la explicación (y es la razón del proceso).</li>
-      </ul>
-    </section>
+  <!-- Vocabulario -->
+  <h2>🗂️ Vocabulario clave</h2>
+  <ul>
+    <li><strong>ATP:</strong> molécula que almacena y entrega energía.</li>
+    <li><strong>Mitocondria:</strong> orgánulo donde se produce ATP.</li>
+    <li><strong>Aeróbico:</strong> que necesita oxígeno.</li>
+    <li><strong>CO₂:</strong> gas de desecho que sale al final.</li>
+  </ul>
 
-    <!-- Recursos inmersivos -->
-    <section class="card">
-      <h2>🧊 / 📱 Recursos inmersivos</h2>
-      <p>Visualiza la mitocondria y las etapas para entender mejor el proceso.</p>
-      <div class="immersive-actions">
-        <!-- Cambia las rutas a donde tengas tus modelos -->
-        <a class="btn" href="../assets/models/mitocondria.glb" target="_blank">🧊 Ver mitocondria 3D</a>
-        <a class="btn" href="../viewerAR/mitocondria.html" target="_blank">📱 Ver en AR</a>
-      </div>
-      <p class="small">
-        Puedes usar un modelo 3D de mitocondria, o bien un recorrido AR que muestre la membrana interna con las crestas.
-        Si todavía no tienes el archivo, deja estos links en “#”.
-      </p>
-    </section>
+  <!-- Errores -->
+  <h2>⚠️ Errores frecuentes</h2>
+  <ul>
+    <li>Confundir la respiración celular con la respiración pulmonar.</li>
+    <li>Creer que solo los animales respiran.</li>
+    <li>Olvidar mencionar al ATP.</li>
+    <li>Pensar que ocurre en el cloroplasto.</li>
+  </ul>
 
-    <!-- Actividad rápida -->
-    <section class="card">
-      <h2>🧪 Actividad rápida</h2>
-      <p>Indica qué ocurre en cada etapa:</p>
-      <ul>
-        <li><strong>Glicólisis:</strong> ruptura de glucosa en el citoplasma.</li>
-        <li><strong>Ciclo de Krebs:</strong> liberación de CO₂ y carga de NADH/FADH₂.</li>
-        <li><strong>Cadena de transporte:</strong> producción masiva de ATP usando O₂.</li>
-      </ul>
-      <p class="small">
-        Esta actividad la puedes llevar al ticket de salida o a tu rúbrica de proceso.
-      </p>
-    </section>
+  <!-- Actividad -->
+  <h2>🧪 Actividad guiada</h2>
+  <p><strong>1.</strong> Ordena las etapas: cadena, glicólisis, Krebs.</p>
+  <p><strong>2.</strong> Marca dónde se produce más ATP.</p>
+  <p><strong>3.</strong> Explica por qué se necesita oxígeno.</p>
 
-    <!-- Volver -->
-    <p>
-      <a class="btn" href="../index.html">⬅ Volver al inicio</a>
-    </p>
-  </main>
+  <!-- Recursos inmersivos -->
+  <h2>🧊 / 📱 Recursos inmersivos</h2>
+  <p>Para ver la mitocondria y sus partes:</p>
+  <p>
+    <a class="btn" href="../assets/models/mitocondria.glb" target="_blank">🧊 Ver mitocondria 3D</a>
+    <a class="btn" href="../viewerAR/mitocondria.html" target="_blank">📱 Ver en AR</a>
+  </p>
+
+  <p><a class="btn" href="../index.html">⬅ Volver al inicio</a></p>
+
+  <img src="../assets/logo.png" alt="Neotech EduLab" style="max-width:140px;display:block;margin-top:2rem;">
+  <p>© Neotech EduLab — Educación Inmersiva</p>
+  <p>🛑 Prohibida su copia y/o reproducción</p>
 </body>
 </html>
