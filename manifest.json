@@ -1,5 +1,5 @@
 {
-  "name": "BIO 1\u00b0M \u2014 PEVE: Resp. celular & Fotos\u00edntesis (CN1M OA7)",
+  "name": "BIO 1°M — PEVE: Resp. celular & Fotosíntesis (CN1M OA7)",
   "short_name": "BIO1M OA7",
   "start_url": ".",
   "display": "standalone",
@@ -7,12 +7,12 @@
   "theme_color": "#0b1220",
   "icons": [
     {
-      "src": "./assets/assets/icon-192.png",
+      "src": "assets/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./assets/assets/icon-512.png",
+      "src": "assets/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

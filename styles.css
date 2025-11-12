@@ -195,3 +195,4 @@ th{background:#0f172a}
 .hidden-protected {
   display: none !important;
 }
+.docente-note { font-size: .7rem; opacity: .6; margin-top: .35rem; }
