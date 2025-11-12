@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biología 1°M — Fotosíntesis</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <script defer src="../script.js"></script>
+</head>
+<body>
+  <!-- Header con controles (igual que en index) -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">🧪 BIO 1°M</span>
+      <span class="subtitle">Fotosíntesis</span>
+    </div>
+    <div class="controls">
+      <button id="btn-tts" aria-label="Leer contenido">🗣️</button>
+      <button id="btn-theme" aria-label="Cambiar tema">🌓</button>
+      <button id="btn-font-inc" aria-label="Aumentar letra">A+</button>
+      <button id="btn-font-dec" aria-label="Disminuir letra">A−</button>
+    </div>
+  </header>
+
+  <!-- Instrucciones PIE -->
+  <section class="pie-instrucciones">
+    <details open>
+      <summary>🧠 Instrucciones para estudiantes PIE</summary>
+      <p>1. Lee primero el resumen “¿Qué debes recordar?”.</p>
+      <p>2. Si la letra es pequeña, usa A+ o activa el modo oscuro/claro.</p>
+      <p>3. Puedes pedir que el sitio lea el contenido con 🗣️.</p>
+      <p>4. Al final hay recursos 3D / AR para explorar la fotosíntesis.</p>
+    </details>
+  </section>
+
+  <main class="content">
+    <!-- Título principal -->
+    <h1>🌿 Fotosíntesis</h1>
+    <p>
+      La fotosíntesis es el proceso mediante el cual las plantas, algas y algunas bacterias
+      transforman la energía de la luz en energía química (glucosa), usando agua y dióxido
+      de carbono, y liberando oxígeno como subproducto.
+    </p>
+
+    <!-- ¿Qué debes recordar? -->
+    <section class="card">
+      <h2>📝 ¿Qué debes recordar?</h2>
+      <ul>
+        <li>Ocurre principalmente en las <strong>hojas</strong>, dentro de los <strong>cloroplastos</strong>.</li>
+        <li>Necesita <strong>luz</strong>, <strong>agua (H₂O)</strong> y <strong>CO₂</strong>.</li>
+        <li>Produce <strong>glucosa</strong> (alimento) y libera <strong>oxígeno (O₂)</strong>.</li>
+        <li>Es clave para la <strong>vida en la Tierra</strong> porque aporta oxígeno y materia.</li>
+      </ul>
+    </section>
+
+    <!-- Conexión con OA del Mineduc -->
+    <section class="card">
+      <h2>📚 Conexión con el OA del Mineduc</h2>
+      <p>
+        Este contenido se articula con el OA de Biología 1° medio que aborda la transformación de
+        materia y energía en los seres vivos (fotosíntesis y respiración), según curriculumnacional.cl.
+        Se puede usar como base para guías PEI/PEVE y para evaluar con rúbrica.
+      </p>
+      <p class="small">
+        Sugerencia docente: complementar con el documento MINEDUC (acceso docente) y con una actividad de
+        comparación fotosíntesis vs respiración.
+      </p>
+    </section>
+
+    <!-- Explicación más larga -->
+    <section>
+      <h2>🧬 ¿Cómo ocurre la fotosíntesis?</h2>
+      <p>
+        La fotosíntesis tiene dos grandes etapas:
+      </p>
+      <ol>
+        <li><strong>Fase luminosa:</strong> ocurre en las membranas de los tilacoides. Usa la luz para
+          producir ATP y NADPH, y se libera oxígeno desde el agua.</li>
+        <li><strong>Fase oscura o ciclo de Calvin:</strong> ocurre en el estroma. Usa el ATP y NADPH
+          para fijar el CO₂ y formar glucosa.</li>
+      </ol>
+      <p>
+        Una ecuación general que te puede servir es:
+      </p>
+      <p><strong>6 CO₂ + 6 H₂O + energía lumínica → C₆H₁₂O₆ + 6 O₂</strong></p>
+    </section>
+
+    <!-- Errores frecuentes -->
+    <section class="card">
+      <h2>⚠️ Errores frecuentes del alumno</h2>
+      <ul>
+        <li>Creer que las plantas “respiran fotosíntesis”. La fotosíntesis <em>no</em> es respiración.</li>
+        <li>Olvidar que la luz es necesaria: sin luz no hay fase luminosa.</li>
+        <li>Confundir “fabricar alimento” con “comer”: la planta produce glucosa, no la “come”.</li>
+        <li>Pensar que solo ocurre de día: la fase luminosa sí, pero los productos se pueden usar después.</li>
+      </ul>
+    </section>
+
+    <!-- Recursos inmersivos -->
+    <section class="card">
+      <h2>🧊 / 📱 Recursos inmersivos</h2>
+      <p>Explora la fotosíntesis con apoyos visuales y 3D.</p>
+      <div class="immersive-actions">
+        <a class="btn" href="../assets/models/fotosintesis.glb" target="_blank">🧊 Ver modelo 3D</a>
+        <a class="btn" href="../viewerAR/fotosintesis.html" target="_blank">📱 Ver en AR</a>
+      </div>
+      <p class="small">
+        (Si aún no tienes el modelo 3D o la vista AR, deja estos enlaces apuntando a “#” hasta que
+        subamos los archivos reales.)
+      </p>
+    </section>
+
+    <!-- Actividad rápida -->
+    <section class="card">
+      <h2>🧪 Actividad rápida</h2>
+      <p>Relaciona cada elemento con su rol en la fotosíntesis:</p>
+      <ul>
+        <li>☀️ → fuente de energía</li>
+        <li>CO₂ → materia prima para formar glucosa</li>
+        <li>H₂O → se rompe y libera O₂</li>
+        <li>Clorofila → pigmento que capta la luz</li>
+      </ul>
+      <p class="small">
+        Puedes registrar esta actividad en el ticket de salida del sitio principal.
+      </p>
+    </section>
+
+    <p>
+      <a class="btn" href="../index.html">⬅ Volver al inicio</a>
+    </p>
+  </main>
+</body>
+</html>
