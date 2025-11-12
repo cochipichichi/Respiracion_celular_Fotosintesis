@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>3D — Fotosíntesis (cloroplasto)</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  
+  <style>
+    body{margin:0;background:#0b0b0b;color:#fff;font-family:system-ui,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif}
+    header{padding:.75rem 1rem;border-bottom:1px solid #222;display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:700}
+    .wrap{padding:1rem}
+    .hint{opacity:.85;font-size:.95rem}
+    .bar{display:flex;gap:.5rem;flex-wrap:wrap;margin:.75rem 0}
+    .btn{background:#1f1f1f;border:1px solid #2b2b2b;border-radius:.6rem;padding:.55rem .8rem;text-decoration:none;color:#fff;cursor:pointer}
+    .btn:hover{background:#262626}
+    .btn[disabled]{opacity:.45;cursor:not-allowed}
+    model-viewer{width:100%;height:78vh;background:#000}
+    footer{padding:1rem;border-top:1px solid #222;opacity:.8}
+    .toolbar{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+    .spacer{flex:1}
+    .kpi{background:#121212;border:1px solid #2b2b2b;border-radius:.6rem;padding:.5rem .7rem}
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="brand">🧊 3D — Fotosíntesis</div>
+    <nav class="bar">
+      <a class="btn" href="../pages/fotosintesis.html">⬅ Volver</a>
+      <a class="btn" href="../index.html">🏠 Inicio</a>
+    </nav>
+  </header>
+
+  <div class="wrap toolbar">
+    <button class="btn" onclick="mv.resetTurntableRotation()">↻ Recentrar</button>
+    <button class="btn" onclick="mv.autoRotate = !mv.autoRotate">⏯️ Rotación</button>
+    <button class="btn" onclick="mv.interactionPrompt='auto'">❔ Ayuda</button>
+    <span class="spacer"></span>
+    <span class="kpi">Arrastra para rotar • Rueda para zoom • Ctrl+arrastrar para pan</span>
+    <button class="btn" id="btnAR" onclick="mv.activateAR()" title="Abrir en AR (opcional)">📱 AR</button>
+  </div>
+
+  <model-viewer
+    id="mv"
+    src="../assets/models/fotosintesis.glb"
+    ios-src="../assets/models/fotosintesis.usdz"
+    camera-controls
+    auto-rotate
+    autoplay
+    poster="../assets/posters/fotosintesis.png"
+    shadow-intensity="1"
+    exposure="1"
+    environment-image="neutral"
+    alt="Modelo 3D de cloroplasto para explorar la fotosíntesis">
+  </model-viewer>
+
+  <div class="wrap">
+    <p class="hint">Tip: mantén presionado <kbd>Ctrl</kbd> y arrastra para desplazar (pan). En laptops con trackpad, pellizca para zoom.</p>
+  </div>
+
+  <footer>© Neotech EduLab — Educación Inmersiva</footer>
+
+  <script>
+    // Desactivar botón AR si el entorno no lo soporta
+    const mv = document.getElementById('mv');
+    const btnAR = document.getElementById('btnAR');
+    if (!('activateAR' in mv)) { btnAR.disabled = true; btnAR.title = 'AR no disponible en este dispositivo'; }
+  </script>
+</body>
+</html>
