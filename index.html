@@ -1,94 +1,163 @@
 
-<!DOCTYPE html><html lang="es"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <title>Biología 1° Medio — CN1M OA7</title>
-<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="styles.css"><meta name="theme-color" content="#0b1220">
+<link href="manifest.json" rel="manifest"/><link href="styles.css" rel="stylesheet"/><meta content="#0b1220" name="theme-color"/>
 </head><body>
 <header><div class="container navbar">
-  <div class="logo"><span style="font-size:22px">🧪</span><div>Biología 1° Medio · <strong>CN1M OA7</strong> <span class="badge">📚©Neotech</span></div></div>
-  <nav class="controls" aria-label="🛠️ Controles">
-    <button class="btn" id="btn-tts">🗣️</button>
-    <button class="btn" id="btn-theme">🌓</button>
-    <button class="btn" id="btn-plus">A+</button>
-    <button class="btn" id="btn-minus">A−</button>
-  </nav>
+<div class="logo"><span style="font-size:22px">🧪</span><div>Biología 1° Medio · <strong>CN1M OA7</strong> <span class="badge">📚©Neotech</span></div></div>
+<nav aria-label="🛠️ Controles" class="controls">
+<button class="btn" id="btn-tts">🗣️</button>
+<button class="btn" id="btn-theme">🌓</button>
+<button class="btn" id="btn-plus">A+</button>
+<button class="btn" id="btn-minus">A−</button>
+</nav>
 </div></header>
 <main class="container">
 <nav class="quick-links">
-  <a href="./pages/kpsi-inicio.html">🧠 KPSI</a>
-  <a href="./pages/fotosintesis.html">🌿 Fotosíntesis</a>
-  <a href="./pages/respiracion-celular.html">🔥 Respiración</a>
-  <!-- <a href="./pages/doc-mineduc.html">📄 MINEDUC</a> -->
-  <a href="./pages/evaluacion-rubrica.html">📋 Rúbrica</a>
-  <a href="./pages/laboratorios.html">🧪 Labs</a>
- 
+<a href="./pages/fotosintesis.html">🌿 Fotosíntesis</a>
+<a href="./pages/respiracion-celular.html">🔥 Respiración</a>
+<a href="./pages/kpsi-inicio.html">🧠 KPSI</a>
+<a href="./pages/quiz.html">🧪 Quiz</a>
+<a class="protected-link hidden-protected" href="./pages/doc-mineduc.html" title="Acceso solo docente">📄 MINEDUC</a>
+<a class="protected-link hidden-protected" href="./pages/laboratorios.html" title="Acceso solo docente">🧪 Labs</a>
+<a class="protected-link hidden-protected" href="./pages/evaluacion-rubrica.html" title="Acceso solo docente">📋 Rúbrica</a>
 </nav>
-
-
-  <section class="hero" id="hero">
-    <div class="pill">📢 Unidad 3 — Eje Biología</div>
-    <h1>Respiración celular & Fotosíntesis</h1>
-    <p><strong>CN1M OA7:</strong> Explicar, por medio de una investigación, el rol de la fotosíntesis y la respiración celular en el ecosistema considerando el flujo de la energía y el ciclo de la materia.</p>
-  </section>
-  <section>
-  <h2 class="section-title">📚 Recursos</h2>
-  <div class="grid">
-    <article class="card">
-      <h3>🌿 Fotosíntesis</h3>
-      <p>Fases y relación con el OA7.</p>
-      <p><a class="btn" href="./pages/fotosintesis.html">🔗 Abrir</a></p>
-    </article>
-
-    <article class="card">
-      <h3>🔥 Respiración celular</h3>
-      <p>Ruta del ATP y comparación con fotosíntesis.</p>
-      <p><a class="btn" href="./pages/respiracion-celular.html">🔗 Abrir</a></p>
-    </article>
-
-    <article class="card">
-      <h3>🧠 KPSI</h3>
-      <p>Inicio y cierre para medir progreso.</p>
-      <p>
-        <a class="btn" href="./pages/kpsi-inicio.html">📝 Inicio</a>
-        <a class="btn" href="./pages/kpsi-fin.html">📝 Fin</a>
-      </p>
-    </article>
-
-    <article class="card">
-      <h3>🧪 Quiz & 🎟️ Ticket</h3>
-      <p>Prácticas rápidas.</p>
-      <p>
-        <a class="btn" href="./pages/quiz.html">🧪 Quiz</a>
-        <a class="btn" href="./pages/ticket.html">🎟️ Ticket</a>
-      </p>
-    </article>
-
-   
-    <article class="card">
-      <h3>🧪 Laboratorios / actividades</h3>
-      <p>Propuestas prácticas ligadas al OA7.</p>
-      <p><a class="btn" href="./pages/laboratorios.html">🧪 Ver actividades</a></p>
-    </article>
-
-    <article class="card">
-      <h3>📋 Rúbrica de evaluación</h3>
-      <p>Instrumento para docentes y PIE.</p>
-      <p><a class="btn" href="./pages/evaluacion-rubrica.html">📋 Ver rúbrica</a></p>
-    </article>
-
-     <article class="card">
-      <h3>📄 Documento MINEDUC</h3>
-      <p>Referencia oficial para preparar clases y PEVE.</p>
-      <p><a class="btn" href="./pages/doc-mineduc.html">📂 Ver documento</a></p>
-    </article>
-    
-  </div>
+<section class="roles">
+<h2 class="section-title">Selecciona tu rol</h2>
+<div class="grid">
+<article class="card card-role">
+<h3>🧑‍🎓 Estudiante</h3>
+<p>Accede a los contenidos de fotosíntesis, respiración celular, KPSI, quiz y ticket.</p>
+<p>
+<a class="btn" href="./pages/fotosintesis.html">🌿 Fotosíntesis</a>
+<a class="btn" href="./pages/respiracion-celular.html">🔥 Respiración</a>
+<a class="btn" href="./pages/kpsi-inicio.html">🧠 KPSI</a>
+</p>
+<p>
+<a class="btn" href="./pages/quiz.html">🧪 Quiz</a>
+<a class="btn" href="./pages/ticket.html">🎟️ Ticket</a>
+</p>
+</article>
+<article class="card card-role docente-card">
+<h3>👩‍🏫 Docente</h3>
+<p>Material protegido para planificación, evaluación y actividades.</p>
+<button class="btn btn-secondary" onclick="openDocenteAccess()">🔐 Solicitar acceso</button>
+<div class="docente-links hidden" id="docente-links">
+<p><a class="btn" href="./pages/doc-mineduc.html">📄 Documento MINEDUC</a></p>
+<p><a class="btn" href="./pages/evaluacion-rubrica.html">📋 Rúbrica de evaluación</a></p>
+<p><a class="btn" href="./pages/laboratorios.html">🧪 Laboratorios / actividades</a></p>
+<section class="descargas">
+<h2 class="section-title">Material docente</h2>
+<p>Usa estos recursos para tu portafolio PEI/PEVE o para entregar a UTP.</p>
+<div class="grid">
+<article class="card">
+<h3>📝 KPSI inicio / fin</h3>
+<p>Registra el progreso del curso.</p>
+<p><a class="btn" href="./pages/kpsi-inicio.html">🔗 Ir</a></p>
+</article>
+<article class="card">
+<h3>🧪 Resultados de Quiz</h3>
+<p>Actividad de cierre para evidencias.</p>
+<p><a class="btn" href="./pages/quiz.html">🔗 Ir</a></p>
+</article>
+<article class="card">
+<h3>🎟️ Ticket de salida</h3>
+<p>Verifica comprensión de la clase.</p>
+<p><a class="btn" href="./pages/ticket.html">🔗 Ir</a></p>
+</article>
+</div>
+</section></div>
+</article>
+</div>
 </section>
-  <div class="footer-bar">
-  <div class="logo"><img src="assets/logo.svg" alt="Neotech EduLab" class="logo-img" onerror="this.style.display='none'"> <div>📚© Neotech EduLab — Educación Inmersiva</div><small>🛠️Prohibida su copia y/o reproducción</small></div>
-</div></main>
-  
-    </div>
-
+<nav class="quick-links">
+<a href="./pages/kpsi-inicio.html">🧠 KPSI</a>
+<a href="./pages/fotosintesis.html">🌿 Fotosíntesis</a>
+<a href="./pages/respiracion-celular.html">🔥 Respiración</a>
+<!-- <a href="./pages/doc-mineduc.html">📄 MINEDUC</a> -->
+<a href="./pages/evaluacion-rubrica.html">📋 Rúbrica</a>
+<a href="./pages/laboratorios.html">🧪 Labs</a>
+</nav>
+<section class="hero" id="hero">
+<div class="pill">📢 Unidad 3 — Eje Biología</div>
+<h1>Respiración celular &amp; Fotosíntesis</h1>
+<p><strong>CN1M OA7:</strong> Explicar, por medio de una investigación, el rol de la fotosíntesis y la respiración celular en el ecosistema considerando el flujo de la energía y el ciclo de la materia.</p>
+</section>
+<section>
+<h2 class="section-title">📚 Recursos</h2>
+<div class="grid">
+<article class="card">
+<h3>🌿 Fotosíntesis</h3>
+<p>Fases y relación con el OA7.</p>
+<p><a class="btn" href="./pages/fotosintesis.html">🔗 Abrir</a></p>
+</article>
+<article class="card">
+<h3>🔥 Respiración celular</h3>
+<p>Ruta del ATP y comparación con fotosíntesis.</p>
+<p><a class="btn" href="./pages/respiracion-celular.html">🔗 Abrir</a></p>
+</article>
+<article class="card">
+<h3>🧠 KPSI</h3>
+<p>Inicio y cierre para medir progreso.</p>
+<p>
+<a class="btn" href="./pages/kpsi-inicio.html">📝 Inicio</a>
+<a class="btn" href="./pages/kpsi-fin.html">📝 Fin</a>
+</p>
+</article>
+<article class="card">
+<h3>🧪 Quiz &amp; 🎟️ Ticket</h3>
+<p>Prácticas rápidas.</p>
+<p>
+<a class="btn" href="./pages/quiz.html">🧪 Quiz</a>
+<a class="btn" href="./pages/ticket.html">🎟️ Ticket</a>
+</p>
+</article>
+<article class="card">
+<h3>🧪 Laboratorios / actividades</h3>
+<p>Propuestas prácticas ligadas al OA7.</p>
+<p><a class="btn" href="./pages/laboratorios.html">🧪 Ver actividades</a></p>
+</article>
+<article class="card">
+<h3>📋 Rúbrica de evaluación</h3>
+<p>Instrumento para docentes y PIE.</p>
+<p><a class="btn" href="./pages/evaluacion-rubrica.html">📋 Ver rúbrica</a></p>
+</article>
+<article class="card">
+<h3>📄 Documento MINEDUC</h3>
+<p>Referencia oficial para preparar clases y PEVE.</p>
+<p><a class="btn" href="./pages/doc-mineduc.html">📂 Ver documento</a></p>
+</article>
+</div>
+</section>
+<div class="footer-bar">
+<div class="logo"><img alt="Neotech EduLab" class="logo-img" onerror="this.style.display='none'" src="assets/logo.svg"/> <div>📚© Neotech EduLab — Educación Inmersiva</div><small>🛠️Prohibida su copia y/o reproducción</small></div>
+</div>
+</main>
 <script src="script.js"></script>
+<!-- Modal acceso docente -->
+<div class="modal-overlay hidden" id="docente-modal">
+<div class="modal">
+<button class="modal-close" onclick="closeDocenteModal()">✖</button>
+<div class="modal-header">
+<img alt="NeoTech EduLab" class="modal-logo" onerror="this.style.display='none'" src="./assets/logo.svg"/>
+<h2>Acceso Docente</h2>
+<p>Material protegido para planificación y evaluación.</p>
+</div>
+<form class="modal-form" onsubmit="submitDocenteAccess(event)">
+<label>
+        Correo autorizado
+        <input id="docente-email" placeholder="tu.correo@liceosannicolas.cl" required="" type="email"/>
+</label>
+<label>
+        Clave
+        <input id="docente-pass" placeholder="••••••••" required="" type="password"/>
+</label>
+<button class="btn full" type="submit">Ingresar</button>
+</form>
+<p class="modal-foot">Neotech EduLab – Educación Inmersiva &amp; I+D · <span class="modal-ver" id="modal-version">v1.0 — 2025</span></p>
+</div>
+</div>
 </body></html>

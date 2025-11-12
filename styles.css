@@ -49,3 +49,149 @@ th{background:#0f172a}
 .quick-links a:hover {
   transform: translateY(-2px);
 }
+
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 1rem 0 1.5rem 0;
+}
+.quick-links a {
+  background: var(--card-bg, #1f2937);
+  padding: .4rem .7rem;
+  border-radius: .6rem;
+  text-decoration: none;
+  color: inherit;
+  font-size: .9rem;
+  border: 1px solid rgba(255,255,255,.05);
+  transition: transform .15s ease;
+}
+.quick-links a:hover {
+  transform: translateY(-2px);
+}
+
+.card {
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.25);
+}
+
+.roles .card-role {
+  min-height: 220px;
+}
+
+.docente-links.hidden {
+  display: none;
+}
+.docente-links {
+  margin-top: 1rem;
+  display: grid;
+  gap: .4rem;
+}
+.btn.btn-secondary {
+  background: #374151;
+}
+.descargas .card h3 {
+  display: flex;
+  gap: .4rem;
+  align-items: center;
+}
+
+
+/* modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.modal-overlay.hidden {
+  display: none;
+}
+.modal {
+  background: #111827;
+  border: 1px solid rgba(255,255,255,.05);
+  border-radius: 1rem;
+  padding: 1.2rem 1.4rem 1.4rem;
+  width: min(360px, 92vw);
+  box-shadow: 0 20px 45px rgba(0,0,0,.35);
+  position: relative;
+}
+.modal-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.modal-logo {
+  height: 48px;
+  margin-bottom: .6rem;
+}
+.modal h2 {
+  margin: 0;
+}
+.modal p {
+  margin-top: .4rem;
+  color: rgba(255,255,255,.6);
+  font-size: .85rem;
+}
+.modal-form {
+  display: grid;
+  gap: .7rem;
+}
+.modal-form label {
+  display: grid;
+  gap: .3rem;
+  font-size: .8rem;
+}
+.modal-form input {
+  background: #1f2937;
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: .6rem;
+  padding: .45rem .55rem;
+  color: inherit;
+}
+.modal-close {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,.55);
+  cursor: pointer;
+  font-size: .9rem;
+}
+.btn.full {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.modal-foot {
+  margin-top: .8rem;
+  text-align: center;
+  font-size: .65rem;
+  color: rgba(255,255,255,.4);
+  letter-spacing: .04em;
+}
+
+.modal-foot .modal-ver {
+  font-weight: 500;
+  color: rgba(255,255,255,.55);
+}
+
+
+.disabled-link {
+  opacity: .45;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+
+.hidden-protected {
+  display: none !important;
+}
